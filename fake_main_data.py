@@ -23,7 +23,7 @@ def fake_data():
     # chọn ngẫu nhiên một ngày để lấy mẫu dữ liệu
     sampleday = listofsampledays[day%5]
 
-    # lấy mẫu có cùng trong ngày lấy mẫu có cung 'time' với 'time' hiện tại
+    # lấy mẫu trong ngày lấy mẫu có cung 'time' với 'time' hiện tại
     from_date = sampleday[:11] + time
     to_date = str(datetime.datetime.strptime(from_date, "%Y-%m-%d %H:%M:%S.%f") + datetime.timedelta(seconds=3))
     query = """
